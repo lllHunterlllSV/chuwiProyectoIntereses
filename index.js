@@ -11,5 +11,5 @@ document.getElementById('botonCalcular').addEventListener('click', function() {
     }
 
     var interesAdeudado = totalMonto - capital;
-    document.getElementById('resultado').value = interesAdeudado.toFixed(2);
+    document.getElementById('resultado').innerHTML= "Resultado: $" +interesAdeudado.toFixed(2);
 });
