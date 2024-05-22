@@ -3,8 +3,9 @@ document.getElementById('botonCalcular').addEventListener('click', function() {
     var capital = parseFloat(document.getElementById('capital').value);
     var alerta = document.getElementById('alerta');
 
-    if (isNaN(totalMonto) || isNaN(capital)) {
+    if (!/^(\d+(\.\d+)?)$/.test(totalMonto) || !/^(\d+(\.\d+)?)$/.test(capital)) {
         alerta.classList.remove('d-none');
+        resultadoLabel.innerText = "Resultado: Ingrese valores válidos.";
         return;
     } else {
         alerta.classList.add('d-none');
