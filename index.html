@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interés Adeudado</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Interés Adeudado</h2>
+                        <div class="alert alert-secondary d-none" role="alert" id="alerta">
+                            Por favor, ingrese valores válidos.
+                        </div>
+                        <form id="interestForm">
+                            <div class="form-group">
+                                <label for="totalMonto">Monto Total:</label>
+                                <input type="text" class="form-control" id="totalMonto" placeholder="Ingrese el monto total">
+                            </div>
+                            <div class="form-group">
+                                <label for="capital">Capital:</label>
+                                <input type="text" class="form-control" id="capital" placeholder="Ingrese el capital">
+                            </div>
+                            <button type="button" class="form-control btn btn-primary" id="botonCalcular">Calcular Interés</button>
+                            <div class="form-group">
+                                <label for="resultado">Resultado:</label>
+                                <input type="text" class="form-control" id="resultado" placeholder="El resultado aparecerá aquí" readonly>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
